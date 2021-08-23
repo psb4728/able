@@ -1,7 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap");
 @import url("../css/common.css");
 .main {
-  margin: 16rem 0 7em 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .main_wrap {
@@ -17,7 +20,6 @@
   justify-content: flex-start;
   align-items: flex-start;
 }
-
 .main_text li {
   font-size: 7rem;
   color: transparent;
@@ -25,28 +27,60 @@
   margin-bottom: 2rem;
   opacity: 0;
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-  animation: text-left .6s linear;
+  animation: text-left 0.6s linear;
   animation-fill-mode: forwards;
 }
-
 .main_text li:first-child {
-  animation-delay: .1s;
+  animation-delay: 0.1s;
 }
-
 .main_text li:nth-child(2) {
-  animation-delay: .3s;
+  animation-delay: 0.3s;
 }
-
 .main_text li:nth-child(3) {
-  animation-delay: .5s;
+  animation-delay: 0.5s;
 }
-
 .main_text li:nth-child(4) {
-  animation-delay: .7s;
+  animation-delay: 0.7s;
+}
+.main_text li:nth-child(5) {
+  animation-delay: 0.9s;
 }
 
-.main_text li:nth-child(5) {
-  animation-delay: .9s;
+.main_mask {
+  max-width: 980px;
+  width: 100%;
+  font-size: 8rem;
+  font-weight: 700;
+  -webkit-text-stroke: 2px var(--main-color);
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: transparent;
+}
+.main_mask .mask {
+  height: 102px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 0.6rem;
+}
+.main_mask .mask span {
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  top: 105px;
+  -webkit-text-stroke: transparent;
+  padding-bottom: 0.6rem;
+  color: var(--main-color);
+}
+
+.mask span[data-show] {
+  transform: translateY(-100%);
+  transition: 0.5s transform ease-in-out;
+}
+
+.mask span[data-up] {
+  transform: translateY(-200%);
+  transition: 0.5s transform ease-in-out;
 }
 
 .main_bt {
@@ -56,43 +90,36 @@
   background: url("../images/bg.png") no-repeat;
   background-size: cover;
 }
-
 .main_bt .container {
-  padding-top: 10rem;
+  padding: 10rem 0 5rem 0;
 }
-
 .main_bt .center_content {
   text-align: center;
 }
-
 .main_bt .center_content img {
-  margin-bottom: 10rem;
+  padding-bottom: 10rem;
   opacity: 0;
   transform: translateY(8rem);
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
-
 .main_bt .center_content img.is-visible {
   opacity: 1;
   transform: translateY(0px);
 }
-
-.main_bt .center_content .tit {
-  font-size: 5.4rem;
+.main_bt .center_content .bt_tit {
+  font-size: 5rem;
   font-weight: 300;
   line-height: 1.6;
   color: var(--main-color);
   opacity: 0;
   transform: translateY(4rem);
-  transition: all .7s ease-in-out;
+  transition: all 0.7s ease-in-out;
 }
-
-.main_bt .center_content .tit.is-visible {
+.main_bt .center_content .bt_tit.is-visible {
   opacity: 1;
   transform: translateY(0px);
 }
-
-.main_bt .center_content .tit strong {
+.main_bt .center_content .bt_tit strong {
   font-weight: 700;
 }
 
@@ -119,42 +146,114 @@
     transform: translate(0rem);
   }
 }
-
-@media screen and (max-width: 1362px) {
-  .lottie_wrap {
-    max-width: 80rem;
+@media screen and (max-width: 1674px) {
+  .main_mask {
+    font-size: 7rem;
+  }
+  .main_mask .mask span {
+    top: 100px;
   }
 }
+@media screen and (max-width: 1546px) {
+  .lottie_wrap {
+    max-width: 70rem;
+  }
+}
+@media screen and (max-width: 1424px) {
+  .main_mask {
+    font-size: 6rem;
+  }
+  .main_mask .mask span {
+    top: 90px;
+  }
+}
+@media screen and (max-width: 1340px) {
+  .lottie_wrap {
+    max-width: 55rem;
+    position: absolute;
+    top: 23rem;
+    right: 0rem;
+  }
 
+  .main_wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-flow: column-reverse;
+  }
+
+  .main_mask {
+    font-size: 9rem;
+  }
+  .main_mask .mask span {
+    top: 110px;
+  }
+}
+/* @media screen and (max-width: 1362px) {
+  .lottie_wrap { max-width: 80rem; }
+} */
+@media screen and (max-width: 1230px) {
+  .main {
+    height: 100%;
+    display: block;
+    margin: 10rem 0;
+  }
+
+  .lottie_wrap {
+    max-width: 40rem;
+  }
+
+  .main_wrap {
+    flex-direction: column;
+  }
+
+  .main_mask {
+    font-size: 9rem;
+    line-height: 1.5;
+  }
+  .main_mask .mask span {
+    top: 120px;
+  }
+}
 @media screen and (max-width: 1168px) {
   .lottie_wrap {
-    max-width: 60rem;
+    display: none;
   }
+
   .main_text li {
     font-size: 5rem;
   }
+
   .main_bt .center_content img {
     width: 50%;
   }
-  .main_bt .center_content .tit {
+  .main_bt .center_content .bt_tit {
     font-size: 4.5rem;
     line-height: 1.5;
   }
-}
 
-@media screen and (max-width: 786px) {
-  .main {
-    margin: 6rem 0 7em 0;
+  .woman_character {
+    width: 20rem;
+    left: 0rem;
   }
+
+  .man_character {
+    width: 20rem;
+    right: 0rem;
+  }
+}
+@media screen and (max-width: 786px) {
   .main_wrap {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
+
   .lottie_wrap {
     max-width: 90rem;
     margin-bottom: 6rem;
   }
+
   .main_text {
     flex-direction: column;
     justify-content: center;
@@ -163,21 +262,66 @@
   .main_text li {
     font-size: 6rem;
   }
-}
 
-@media screen and (max-width: 486px) {
-  .main_bt .center_content img {
-    margin-bottom: 5rem;
+  .main_mask {
+    font-size: 7rem;
+    line-height: 1.2;
   }
-  .main_bt .center_content .tit {
+  .main_mask .mask {
+    height: 70px;
+  }
+  .main_mask .mask span {
+    top: 75px;
+  }
+
+  .main_bt {
+    height: 80vh;
+  }
+  .main_bt .center_content img {
+    padding-bottom: 5rem;
+  }
+}
+@media screen and (max-width: 486px) {
+  .main_mask {
+    font-size: 5rem;
+  }
+  .main_mask .mask {
+    height: 60px;
+  }
+  .main_mask .mask span {
+    top: 55px;
+  }
+
+  .main_bt .center_content .bt_tit {
     font-size: 3.5rem;
   }
+}
+@media screen and (max-width: 378px) {
+  .main_mask {
+    font-size: 4rem;
+  }
+  .main_mask .mask {
+    height: 50px;
+  }
+  .main_mask .mask span {
+    top: 45px;
+  }
+
+  .main_bt {
+    height: 100vh;
+  }
+  .main_bt .center_content .bt_tit {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 320px) {
   .woman_character {
-    width: 20rem;
+    width: 15rem;
     left: 0rem;
   }
+
   .man_character {
-    width: 20rem;
+    width: 15rem;
     right: 0rem;
   }
 }
