@@ -79,6 +79,21 @@
   background: #fafafa;
 }
 
+footer {
+  padding: 4rem 0;
+  color: var(--main-color);
+  background-color: var(--bg-color);
+  box-sizing: border-box;
+}
+
+.footer_top::before {
+  background: var(--main-color);
+}
+
+.link_wrap .menu_list a {
+  color: var(--main-color);
+}
+
 @keyframes up {
   0% {
     transform: translateY(10rem);

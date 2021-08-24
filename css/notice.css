@@ -12,6 +12,15 @@
   height: 100%;
 }
 
+.tit_wrap .sm_tit {
+  opacity: 1;
+  animation: none;
+}
+.tit_wrap span {
+  opacity: 1;
+  animation: none;
+}
+
 .list_info {
   position: relative;
   display: flex;

@@ -106,9 +106,29 @@ section {
   display: block;
 }
 
+/* input 기본 스타일 초기화 */
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+}
+input::placeholder {
+  color: #71C7CB;
+}
+
+/* input type number 에서 화살표 제거 */
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 html {
   font-size: 62.5%;
   -webkit-text-size-adjust: none;
+  text-align: center;
 }
 
 
@@ -116,21 +136,27 @@ body {
   font-size: 1.6rem;
   line-height: 1;
   font-family: 'Noto Sans KR', sans-serif;
+  margin: 0 auto;
+  background: #fafafa;
   box-sizing: border-box;
 }
 
+::selection { 
+  background: #71C7CB;
+  color: #fff; 
+}
 ::-webkit-scrollbar {
   width: 12px;
 }
 
 ::-webkit-scrollbar-track {
   -webkit-box-shadow: none !important;
-  background-color: transparent;
+  background-color: #fafafa;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(to bottom, #8FCEFF 60%, #f1f1f1);
-  border-radius: 10px;
+  background: linear-gradient(to bottom, #71C7CB 60%, #f1f1f1);
+  border-radius: 20px;
 }
 
 ol,
