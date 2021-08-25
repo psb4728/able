@@ -121,7 +121,7 @@ main div p {
     position: absolute;
     bottom: 5rem;
     left: 5rem;
-    width: 60rem;
+    width: 80rem;
   }
   main div {
     position: absolute;
@@ -187,6 +187,9 @@ main div p {
 .notice_wrap {
   width: 100%;
   height: 100%;
+}
+.notice_wrap.container {
+  padding-bottom: 10rem;
 }
 
 .tit_wrap.ani_none .sm_tit {
@@ -306,6 +309,11 @@ main div p {
   margin-top: 2rem;
   color: var(--balck-color);
 }
+.open .list_content p strong {
+  display: block;
+  font-weight: 700;
+  padding: 1rem 0;
+}
 .open .list_content em {
   font-size: 1.5rem;
   padding: 0.8rem 1rem;
@@ -316,6 +324,10 @@ main div p {
 }
 
 @media screen and (max-width: 780px) {
+  .notice_wrap.container {
+    padding-bottom: 5rem;
+  }
+
   .list_info {
     padding: 3rem 1rem;
   }
@@ -486,6 +498,10 @@ main div p {
   }
   .portfolio .bar {
     max-width: 300px;
+  }
+
+  .content_wrap {
+    background-size: 200% 100%;
   }
 
   .folio_container .able_img {
@@ -1004,7 +1020,7 @@ footer {
 }
 .link_wrap .menu_list a {
   font-size: 1.8rem;
-  font-weight: 300;
+  font-weight: 400;
   padding: 1rem 0.5rem;
   color: #fff;
   transition: opacity 0.2s;
@@ -1039,6 +1055,15 @@ footer {
   padding-left: 3rem;
 }
 
+@media screen and (max-width: 1330px) {
+  header {
+    padding: 0 4rem;
+  }
+
+  .toggle_wrap {
+    right: 4rem;
+  }
+}
 @media screen and (max-width: 786px) {
   .menu_info {
     display: none;

@@ -535,6 +535,11 @@ footer {
   padding-left: 3rem;
 }
 
+@media screen and (max-width: 1330px) {
+  header { padding: 0 4rem; }
+  .toggle_wrap { right: 4rem; }
+}
+
 @media screen and (max-width: 786px) {
   .menu_info {
     display: none;
