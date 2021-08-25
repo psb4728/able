@@ -5,6 +5,11 @@ body {
   background-size: cover;
 }
 
+.input_wrap:first-child {
+  opacity: 0;
+  animation: up 1s 0.3s;
+  animation-fill-mode: forwards;
+}
 .input_wrap h3 {
   font-size: 3rem;
   font-weight: 500;
@@ -62,6 +67,10 @@ body {
   background: linear-gradient(to bottom, transparent 5%, #71C7CB 20%, transparent 95%);
 }
 
+.file {
+  padding: 2rem 2rem;
+  background: #fff;
+}
 .file::-webkit-file-upload-button {
   font-size: 1.5rem;
   padding: 0.5rem 1rem;
@@ -74,6 +83,13 @@ body {
 
 .checkbox_wrap {
   border-bottom: 1px solid var(--main-color);
+  opacity: 0;
+  transform: translateY(10rem);
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+.checkbox_wrap.is-visible {
+  opacity: 1;
+  transform: translateY(0rem);
 }
 .checkbox_wrap h3 {
   font-size: 3rem;
@@ -100,6 +116,13 @@ body {
   text-align: left;
   padding: 4rem 0;
   box-sizing: border-box;
+  opacity: 0;
+  transform: translateY(10rem);
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+.terms.is-visible {
+  opacity: 1;
+  transform: translateY(0rem);
 }
 
 .checkbox input {
@@ -197,6 +220,10 @@ body {
   }
 }
 @media screen and (max-width: 480px) {
+  body {
+    background-size: 100% 50%;
+  }
+
   .checkbox_area p {
     width: 100%;
     text-align: left;
