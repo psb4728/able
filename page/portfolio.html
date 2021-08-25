@@ -32,15 +32,14 @@
   <meta name="twitter:image" content="../images/kakao_img.png" />
 
   <!-- Faivicon -->
-  <link rel="icon" type="image/png" href="images/favicon.ico">
+  <link rel="icon" type="image/png" href="../images/BGE_icon.ico">
 
   <!-- CSS -->
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="../css/reset.css">
-  <link rel="stylesheet" href="../css/common.css">
-  <link rel="stylesheet" href="../css/portfolio.css">
+  <link rel="stylesheet" href="../css/style.css">
 
   <!-- js -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -49,6 +48,17 @@
 </head>
 
 <body>
+  <!-- Skip -->
+  <div id="skipNav">
+    <a href="#portfolio">본문 바로가기</a>
+    <a href="../index.html">홈 바로가기</a>
+    <a href="./info.html">회사소개 바로가기</a>
+    <a href="./portfolio.html">포트폴리오 바로가기</a>
+    <a href="./question.html">문의하기 바로가기</a>
+    <a href="./notice.html">공지사항 바로가기</a>
+    <a href="./employment.html">채용 바로가기</a>
+  </div>
+
   <!-- HEADER -->
   <header>
     <h1>
@@ -111,17 +121,26 @@
     <section class="container">
       <h2 class="tit show-on-scroll">Portfolio</h2>
 
-      <section class="business_wrap bg">
+      <section class="business_wrap portfolio_slide" id="portfolio">
         <div class="swiper-container mySwiper">
           <div class="swiper-wrapper show-on-scroll">
             <div class="swiper-slide">
               <img src="../images/portfolio_img1.png" alt="노트북">
+              <div class="hover_content">
+                comming soon
+              </div>
             </div>
             <div class="swiper-slide">
               <img src="../images/portfolio_img2.png" alt="핸드폰">
+              <div class="hover_content">
+                comming soon
+              </div>
             </div>
             <div class="swiper-slide">
               <img src="../images/portfolio_img3.png" alt="키오스크">
+              <div class="hover_content">
+                comming soon
+              </div>
             </div>
             <div class="swiper-slide">
               <img src="../images/commingsoon_white.png" alt="comingsoon">
@@ -137,14 +156,14 @@
   </article>
 
   <!-- Footer -->
-  <footer>
+  <footer class="white_footer">
     <article class="container">
-      <div class="footer_top">
+      <div class="footer_top white_footer_top">
         <img src="../images/footer_logo1.png" alt="able">
         <p><strong>Add</strong>인천광역시 연수구 갯벌로 129, 202호</p>
       </div>
       <div class="footer_bottom">
-        <div class="link_wrap">
+        <div class="link_wrap white_link">
           <ul class="menu_list">
             <li><a href="./info.html">회사소개</a></li>
             <li><a href="./portfolio.html">포트폴리오</a></li>
