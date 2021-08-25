@@ -5,6 +5,7 @@
 //   }, 1000);
 // });
 
+// 메인 타이틀 텍스트 스크롤링
 setInterval(function () {
   const show = document.querySelector('span[data-show]')
   const next = show.nextElementSibling || document.querySelector('span:first-child')
@@ -21,7 +22,7 @@ setInterval(function () {
 }, 2500)
 
 
-// notice list
+// 공지사항 리스트
 const accItem = document.getElementsByClassName('notice_list');
 const accHD = document.getElementsByClassName('list_tit');
 for (let i = 0; i < accHD.length; i++) {

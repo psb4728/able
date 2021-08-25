@@ -4,7 +4,6 @@ const swiper = new Swiper(".mySwiper", {
   speed: 500,
   scrollbar: {
     el: ".swiper-scrollbar",
-    hide: true,
   },
   breakpoints: {
     486: {
