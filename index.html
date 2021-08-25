@@ -8,7 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <meta name="viewport" content="user-scalable=0" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no" name="viewport" />
+  <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=yes" name="viewport" />
   <meta name="format-detection" content="telephone=no" />
   <meta name="author" content="ablesystem" />
   <meta name="description" content="불가능을 가능하게 만드는 에이블시스템 입니다." />
@@ -37,16 +37,25 @@
   <!-- CSS -->
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/common.css">
-  <link rel="stylesheet" href="./css/style.css">
-
+  <link rel="stylesheet" href="./css/home.css">
+  
   <!-- js -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-
+  
 </head>
 
 <body>
+  <div id="skipNav">
+    <a href="#main_bt">본문 바로가기</a>
+    <a href="./page/info.html">회사소개 바로가기</a>
+    <a href="./page/portfolio.html">포트폴리오 바로가기</a>
+    <a href="./page/question.html">문의하기 바로가기</a>
+    <a href="./page/notice.html">공지사항 바로가기</a>
+    <a href="./page/employment.html">채용 바로가기</a>
+  </div>
+  <!-- <div class="lode_page"></div> -->
   <header>
     <h1>
       <a href="./index.html">
@@ -92,16 +101,16 @@
     </nav>
   </header>
 
-  <!-- <div class="lode_page"></div> -->
-
+  <!-- Main -->
   <main class="container main">
     <article class="main_wrap">
+      <h2 class="h_hide">메인</h2>
       <div class="lottie_wrap">
         <lottie-player src="./images/able.json" speed="1" style="max-width: 90%; height: 100%;" loop autoplay>
         </lottie-player>
       </div>
 
-      <h2 class="main_mask">
+      <div class="main_mask">
         우리는
         <div class="mask">
           <span data-show>재미있는 상상을 하는</span>
@@ -110,7 +119,7 @@
           <span>같이 걸어가는</span>
         </div>
         에이블입니다.
-      </h2>
+      </div>
       <!-- <ul class="main_text">
         <li>소프트웨어</li>
         <li>프로그래밍</li>
@@ -121,7 +130,9 @@
     </article>
   </main>
 
-  <article class="main_bt">
+  <!-- Main Bottom -->
+  <article class="main_bt" id="main_bt">
+    <h2 class="h_hide">하단 메인</h2>
     <section class="container">
       <div class="center_content">
         <img src="./images/main_logo.png" alt="able" class="show-on-scroll">
@@ -140,6 +151,7 @@
     </section>
   </article>
 
+  <!-- Footer -->
   <footer>
   <article class="container">
     <div class="footer_top">
