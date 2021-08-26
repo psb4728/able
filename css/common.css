@@ -55,6 +55,7 @@
 .tit_wrap {
   text-align: center;
 }
+
 .tit_wrap .sm_tit {
   position: relative;
   font-size: 4.8rem;
@@ -66,6 +67,7 @@
   animation: up 1s;
   animation-fill-mode: forwards;
 }
+
 .tit_wrap span {
   display: block;
   width: 100%;
@@ -99,10 +101,12 @@
   z-index: 1;
   cursor: pointer;
 }
+
 .btn.is-visible {
   opacity: 1;
   transform: translateY(0rem);
 }
+
 .btn span {
   display: flex;
   justify-content: center;
@@ -113,10 +117,12 @@
   background: var(--main-color);
   transition: all 0.3s ease-in-out;
 }
+
 .btn span i {
   color: #fff;
   transition: all 0.3s ease-in-out;
 }
+
 .btn::before {
   content: "";
   position: absolute;
@@ -128,17 +134,21 @@
   transition: all 0.3s ease-in-out;
   z-index: -1;
 }
+
 .btn:hover {
   color: #fff;
 }
+
 .btn:hover span {
   background: #fff;
   animation: arrow 1s infinite ease-in-out;
   -webkit-animation: arrow 1s infinite ease-in-out;
 }
+
 .btn:hover span i {
   color: var(--main-color);
 }
+
 .btn:hover::before {
   left: 0%;
 }
@@ -147,23 +157,29 @@
   0% {
     transform: translate(0);
   }
+
   50% {
     transform: translate(5px);
   }
+
   0% {
     transform: translate(0);
   }
 }
+
 @keyframes up {
   0% {
     transform: translateY(10rem);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0rem);
   }
 }
-input, textarea {
+
+input,
+textarea {
   width: 100%;
   font-size: 2rem;
   padding: 2.5rem 2rem;
@@ -173,10 +189,14 @@ input, textarea {
   box-sizing: border-box;
   outline: none;
 }
-input::placeholder, textarea::placeholder {
+
+input::placeholder,
+textarea::placeholder {
   font-size: 1.6rem;
 }
-input:focus, textarea:focus {
+
+input:focus,
+textarea:focus {
   background: #AFE4E6;
 }
 
@@ -286,10 +306,12 @@ nav {
   transform: translate(-20em);
   transition: transform 0.8s ease-in-out, opacity 0.3s ease-in;
 }
+
 .menu_info .menu_logo {
   width: 80%;
   margin-bottom: 7rem;
 }
+
 .menu_info .info_wrap {
   display: flex;
   flex-direction: column;
@@ -297,12 +319,15 @@ nav {
   max-width: 600px;
   width: 100%;
 }
+
 .menu_info .info_wrap li {
   margin-bottom: 4rem;
 }
+
 .menu_info .info_wrap li:last-child {
   margin-bottom: 0;
 }
+
 .menu_info .info_wrap li a {
   display: flex;
   align-items: center;
@@ -310,15 +335,18 @@ nav {
   font-weight: 300;
   color: #fff;
 }
+
 .menu_info .info_wrap li a img {
   width: 2.3rem;
 }
+
 .menu_info .info_wrap li a span {
   display: block;
   font-weight: 500;
   padding: 0 8rem 0 1rem;
   box-sizing: border-box;
 }
+
 .menu_info .info_wrap li a .mail {
   padding-right: 6rem;
 }
@@ -333,9 +361,11 @@ nav {
   border-left: 1px solid #fff;
   box-sizing: border-box;
 }
+
 .menu li {
   margin: 0 0 1rem 4rem;
 }
+
 .menu li:last-child {
   margin-bottom: 0;
 }
@@ -355,6 +385,7 @@ nav {
   transition: transform 0.8s ease-in-out, opacity 0.3s ease-in, color 0.3s ease-in-out;
   box-sizing: border-box;
 }
+
 .menu-item::before {
   content: attr(data-text);
   position: absolute;
@@ -369,15 +400,17 @@ nav {
   z-index: -2;
   transition: all 0.4s ease-in-out;
 }
+
 .menu-item:hover {
   color: #35A7AC;
 }
+
 .menu-item:hover::before {
   top: 50%;
   opacity: 0.1;
 }
 
-.menu li + li {
+.menu li+li {
   margin-top: 1em;
 }
 
@@ -413,11 +446,14 @@ nav {
 
 .swiper-container {
   width: 100%;
+  overflow: hidden;
 }
+
 .swiper-container .swiper-wrapper {
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
 }
+
 .swiper-container .swiper-wrapper.is-visible {
   opacity: 1;
 }
@@ -431,6 +467,7 @@ nav {
   width: 56rem;
   text-align: center;
 }
+
 .swiper-slide img {
   display: block;
   width: 100%;
@@ -438,6 +475,7 @@ nav {
   object-fit: cover;
   border-radius: 10px;
 }
+
 .swiper-slide p {
   font-size: 2.2rem;
   font-weight: 500;
@@ -445,7 +483,9 @@ nav {
   padding: 2rem 0 4rem;
   color: var(--text-green);
 }
-
+.swiper-horizontal>.swiper-scrollbar {
+  position: inherit;
+}
 .swiper-scrollbar-drag {
   background: var(--main-color);
 }
@@ -465,6 +505,7 @@ footer {
   align-items: flex-end;
   margin-bottom: 14px;
 }
+
 .footer_top::before {
   content: "";
   position: absolute;
@@ -475,10 +516,12 @@ footer {
   height: 1px;
   background: #fff;
 }
+
 .footer_top p {
   font-size: 2rem;
   font-weight: 300;
 }
+
 .footer_top p strong {
   font-weight: 400;
   padding-right: 1rem;
@@ -493,11 +536,13 @@ footer {
   justify-content: space-between;
   align-items: flex-start;
 }
+
 .link_wrap .menu_list {
   display: flex;
   align-items: center;
   gap: 6rem;
 }
+
 .link_wrap .menu_list a {
   font-size: 1.8rem;
   font-weight: 300;
@@ -505,20 +550,25 @@ footer {
   color: #fff;
   transition: opacity 0.2s;
 }
+
 .link_wrap .menu_list a:hover {
   opacity: 0.8;
 }
+
 .link_wrap .connect_list {
   text-align: right;
 }
+
 .link_wrap .connect_list li {
   font-size: 1.8rem;
   font-weight: 300;
   padding-bottom: 1.5rem;
 }
+
 .link_wrap .connect_list li:last-child {
   margin-bottom: 0;
 }
+
 .link_wrap .connect_list li strong {
   font-weight: 400;
 }
@@ -530,14 +580,10 @@ footer {
   font-size: 1.8rem;
   padding-top: 4rem;
 }
+
 .copy_wrap address {
   font-weight: 400;
   padding-left: 3rem;
-}
-
-@media screen and (max-width: 1330px) {
-  header { padding: 0 4rem; }
-  .toggle_wrap { right: 4rem; }
 }
 
 @media screen and (max-width: 786px) {
@@ -550,6 +596,7 @@ footer {
     margin-left: 0;
     border-left: none;
   }
+
   .menu li {
     margin: 0 0 4rem 0;
   }
@@ -558,6 +605,7 @@ footer {
     font-size: 5rem;
     text-align: center;
   }
+
   .menu-item::before {
     font-size: 2em;
   }
@@ -573,10 +621,12 @@ footer {
   .link_wrap .menu_list {
     gap: 3rem;
   }
+
   .link_wrap .menu_list a {
     font-size: 1.5rem;
     padding: 1rem .2rem;
   }
+
   .link_wrap .connect_list li {
     font-size: 1.5rem;
   }
@@ -584,10 +634,12 @@ footer {
   .copy_wrap {
     font-size: 1.5rem;
   }
+
   .copy_wrap address {
     padding-left: 2rem;
   }
 }
+
 @media screen and (max-width: 580px) {
   .container {
     padding: 0 2rem;
@@ -609,10 +661,12 @@ footer {
     flex-direction: column;
     font-size: 1.5rem;
   }
+
   .copy_wrap address {
     padding: 1rem 0 0 0;
   }
 }
+
 @media screen and (max-width: 480px) {
   header {
     padding: 0 3rem;
@@ -638,13 +692,16 @@ footer {
     align-items: flex-start;
     flex-direction: column;
   }
+
   .link_wrap .menu_list {
     gap: 2rem;
   }
+
   .link_wrap .connect_list {
     width: 100%;
     padding-top: 2rem;
   }
+
   .link_wrap .connect_list li {
     padding-bottom: 1rem;
   }

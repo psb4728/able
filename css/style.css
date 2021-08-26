@@ -52,6 +52,10 @@ main div p {
   animation-fill-mode: forwards;
 }
 
+.btn.question_btn {
+  margin: 8rem 0 4rem;
+}
+
 .bg {
   height: 100vh;
   background: url("../images/white_bg.png") no-repeat;
@@ -429,6 +433,7 @@ main div p {
 }
 
 .swiper-slide {
+  margin-bottom: 4rem;
   cursor: pointer;
 }
 .swiper-slide:hover .hover_content {
@@ -452,10 +457,6 @@ main div p {
   background: rgba(255, 255, 255, 0.9);
   opacity: 0;
   transition: opacity 0.4s ease-in-out;
-}
-
-.swiper-container {
-  padding-bottom: 4rem;
 }
 
 .swiper-scrollbar-drag {
@@ -928,6 +929,7 @@ nav {
 
 .swiper-container {
   width: 100%;
+  overflow: hidden;
 }
 .swiper-container .swiper-wrapper {
   opacity: 0;
@@ -960,6 +962,10 @@ nav {
   line-height: 1.4;
   padding: 2rem 0 4rem;
   color: var(--text-green);
+}
+
+.swiper-horizontal > .swiper-scrollbar {
+  position: inherit;
 }
 
 .swiper-scrollbar-drag {
