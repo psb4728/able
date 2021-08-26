@@ -5,7 +5,7 @@ body {
   background-size: cover;
 }
 
-.input_wrap:first-child {
+.input_wrap {
   opacity: 0;
   animation: up 1s 0.3s;
   animation-fill-mode: forwards;
