@@ -148,6 +148,11 @@ main div p {
   }
 }
 @media screen and (max-width: 480px) {
+  .bg {
+    background: none;
+    background-color: var(--bg-color);
+  }
+
   main img {
     bottom: 8rem;
     left: 2.5rem;
@@ -1050,6 +1055,7 @@ footer {
 }
 
 .copy_wrap {
+  width: 100%;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -1058,7 +1064,10 @@ footer {
 }
 .copy_wrap address {
   font-weight: 400;
-  padding-left: 3rem;
+}
+.copy_wrap a {
+  color: #fff;
+  cursor: inherit;
 }
 
 @media screen and (max-width: 1330px) {
@@ -1119,9 +1128,6 @@ footer {
   .copy_wrap {
     font-size: 1.5rem;
   }
-  .copy_wrap address {
-    padding-left: 2rem;
-  }
 }
 @media screen and (max-width: 580px) {
   .container {
@@ -1145,7 +1151,7 @@ footer {
     font-size: 1.5rem;
   }
   .copy_wrap address {
-    padding: 1rem 0 0 0;
+    padding: 1rem 2rem 0 0;
   }
 }
 @media screen and (max-width: 480px) {
@@ -1187,6 +1193,9 @@ footer {
   .copy_wrap address {
     padding: 1rem 0 0 0;
     text-align: left;
+  }
+  .copy_wrap a {
+    margin: 1rem 0 0 0;
   }
 }
 .main {

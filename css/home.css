@@ -277,6 +277,9 @@
     font-size: 5rem;
   }
 
+  .main_bt {
+    height: 100%;
+  }
   .main_bt .center_content img {
     width: 50%;
   }

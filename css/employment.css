@@ -221,7 +221,8 @@ body {
 }
 @media screen and (max-width: 480px) {
   body {
-    background-size: 100% 50%;
+    background-image: none;
+    background-color: var(--bg-color);
   }
 
   .checkbox_area p {
