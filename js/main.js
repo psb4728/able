@@ -1,9 +1,9 @@
-// window.addEventListener("load", function(event) {
-//   const loadPage = this.document.querySelector('.lode_page');
-//   setTimeout(() => {
-//     loadPage.classList.add('hide');
-//   }, 1000);
-// });
+window.addEventListener("load", function(event) {
+  const loadPage = this.document.querySelector('.lode_page');
+  setTimeout(() => {
+    loadPage.classList.add('hide');
+  }, 2000);
+});
 
 // 메인 타이틀 텍스트 스크롤링
 setInterval(function () {
